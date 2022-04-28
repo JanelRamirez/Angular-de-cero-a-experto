@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Personaje } from '../interfaces/dbz.interface';
 
 
 
@@ -8,7 +9,7 @@ import { Component, Input } from '@angular/core';
 })
 export class PersonajesComponent {
 
-  @Input() personajes : any[] = [] ;
+  @Input() personajes : Personaje[] = [] ;
 
 
 }

@@ -20,18 +20,12 @@ export class MainPageComponent  {
       poder: 17500
     }
   ]
-
   nuevo: Personaje = {
-    nombre: '',
-    poder: 0
+    nombre:'Maestro Rochy',
+    poder: 1000
   }
- 
- agregar(){
-    if(this.nuevo.nombre.trim().length === 0){
-      return;
-    }
-    this.personajes.push(this.nuevo);  
-    this.nuevo = { nombre: '', poder:0}
- }
 
+  agregarPersonaje(personaje:Personaje){
+    this.personajes.push(personaje)
+  }
 }
